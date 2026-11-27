@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Turkey Trouble — 3 zones, 1000m dash, 1 relentless farmer</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #1c1210;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Trebuchet MS, Verdana, sans-serif;
+  }
+  #wrap {
+    width: min(100vw, calc(100vh * 16 / 9));
+    aspect-ratio: 16 / 9;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #e76f51;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
